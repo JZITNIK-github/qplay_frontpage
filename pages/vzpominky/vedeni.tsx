@@ -4,6 +4,7 @@ import Image from "next/image";
 import profikk from "../../public/images/profikk.png"
 import spetty from "../../public/images/spetty.png"
 import mirek from "../../public/images/mirek.png"
+import TextBubble from "../../components/TextBubble";
 
 const SKIN_HEIGHT = 350;
 
@@ -20,7 +21,7 @@ export default function Memories() {
                 </div>
             </Banner>
             <section className="aboutus">
-                <div className="container">
+                <div className="container d-flex flex-column gap-3">
                     <h1 className="title">Střípky z vedení</h1>
                     <div className="row">
                         <div className="col-lg-5">
@@ -37,11 +38,10 @@ export default function Memories() {
                                     }}/>
                             </div>
                         </div>
-                        <div className="col-lg-7 d-flex">
+                        <div className="col-lg-7 d-flex h-100">
                             <div className="content">
                                 <h1>PROFIKK</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
+                                <TextBubble text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
                                     consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in reprehenderit
                                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
                                     Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
@@ -50,17 +50,24 @@ export default function Memories() {
                                     tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
                                     tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
                                     consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
-                                    arcu lacinia neque faucibus fringilla.
-                                </p>
+                                    arcu lacinia neque faucibus fringilla. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
+                                    Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
+                                    sapien. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nulla turpis
+                                    magna, cursus sit amet, suscipit a, interdum id, felis. Morbi leo mi, nonummy eget
+                                    tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
+                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+                                    consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
+                                    arcu lacinia neque faucibus fringilla." />
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-7 d-flex">
+                        <div className="col-lg-7 d-flex h-100">
                             <div className="content">
                                 <h1>_SPETTY_</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
+                                <TextBubble text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
                                     consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in reprehenderit
                                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
                                     Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
@@ -69,8 +76,7 @@ export default function Memories() {
                                     tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
                                     tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
                                     consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
-                                    arcu lacinia neque faucibus fringilla.
-                                </p>
+                                    arcu lacinia neque faucibus fringilla." right />
                             </div>
                         </div>
                         <div className="col-lg-5">
@@ -102,22 +108,13 @@ export default function Memories() {
                                     }}/>
                             </div>
                         </div>
-                        <div className="col-lg-7 d-flex">
+                        <div className="col-lg-7 d-flex h-100">
                             <div className="content">
                                 <h1>MIREK_</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
+                                <TextBubble text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
                                     consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in reprehenderit
                                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
-                                    Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
-                                    sapien. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nulla turpis
-                                    magna, cursus sit amet, suscipit a, interdum id, felis. Morbi leo mi, nonummy eget
-                                    tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
-                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-                                    consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
-                                    arcu lacinia neque faucibus fringilla.
-                                </p>
-
+                                    Etiam ligula pede." />
                             </div>
                         </div>
                     </div>
